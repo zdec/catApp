@@ -12,8 +12,6 @@ export class AuthService {
 
   async login(username: string, password: string): Promise<boolean> {
     try {
-      console.log("Login ==> ", username)
-      console.log("password ==> ", password)
       const response = await this.http.post<any>(`${this.apiUrl}/login`, { name: username, password }).toPromise();
       this.user = response;
       return true;

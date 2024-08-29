@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, Inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CatService } from '../../services/cat.service';
 import { HttpClientModule } from '@angular/common/http'; // Importa HttpClientModule

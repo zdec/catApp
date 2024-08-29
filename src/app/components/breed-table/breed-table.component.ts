@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CatService } from '../../services/cat.service';
 import { HttpClientModule } from '@angular/common/http'; // Importa HttpClientModule
