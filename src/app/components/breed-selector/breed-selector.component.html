@@ -1,0 +1,4 @@
+<select (change)="onSelectBreed()" [(ngModel)]="selectedBreed" class="form-select mt-1 block w-full">
+    <option *ngFor="let breed of breeds" [value]="breed.id">{{ breed.name }}</option>
+  </select>
+  

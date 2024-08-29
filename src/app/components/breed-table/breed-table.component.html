@@ -1,0 +1,17 @@
+<input type="text" [(ngModel)]="searchText" placeholder="Search breeds..." class="form-input mt-1 block w-full">
+<table class="table-auto w-full mt-4">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Origin</th>
+      <th>Life Span</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let breed of filteredBreeds">
+      <td>{{ breed.name }}</td>
+      <td>{{ breed.origin }}</td>
+      <td>{{ breed.life_span }}</td>
+    </tr>
+  </tbody>
+</table>

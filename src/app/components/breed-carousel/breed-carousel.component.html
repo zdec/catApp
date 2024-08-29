@@ -1,0 +1,8 @@
+<div *ngIf="breedDetails">
+    <h2>{{ breedDetails.name }}</h2>
+    <p>{{ breedDetails.description }}</p>
+    <div class="carousel">
+      <img *ngFor="let image of images" [src]="image.url" alt="{{ breedDetails.name }}" class="w-full">
+    </div>
+  </div>
+  
