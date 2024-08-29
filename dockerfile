@@ -26,5 +26,6 @@ COPY --from=build /app/dist/cat-app /usr/share/nginx/html
 EXPOSE 80
 
 # Comando para iniciar Nginx
-CMD ["ng serve", "main.ts", "-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
+
 
