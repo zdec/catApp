@@ -8,12 +8,10 @@ import { ProtectedComponent } from './pages/protected/protected.component';
 import { AuthGuard } from './guards/auth.guard';
 
 
-
-
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'table', component: TableComponent },
-  { path: 'login', component: LoginComponent },
+  { path: '', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'protected', component: ProtectedComponent, canActivate: [AuthGuard] },
 ];
